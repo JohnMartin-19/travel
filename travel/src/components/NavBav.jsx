@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom"; 
-import './NavBar.css'; 
+import './NavBar.css';
+import { useState } from "react"; 
 
 function NavBar(){
     const [click,setClick] = useState(false)

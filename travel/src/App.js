@@ -1,14 +1,12 @@
 import React from 'react';
-import Routes from '../routes/routes'
-
+import Routess from './routes/routes'
 import './App.css';
-import Active from '../routes/routes';
-
+import NavBar from './components/NavBar';
 function App() {
-  const [ setPage] = useState('/')
-  return (
+ return (
     <div className="App">
-      <Routes />
+      <NavBar/>
+      <Routess />
     </div>
   );
 }
