@@ -1,7 +1,7 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom'
 import Home from '../components'
-function Active(){
+function Routes(){
     return(
         <div className="App">
       <NavBar onChange={setPage}/>
@@ -16,4 +16,4 @@ function Active(){
     </div>
     )
 }
-export default Active
+export default Routes

@@ -1,19 +1,14 @@
+import React from 'react';
+import Routes from '../routes/routes'
 
 import './App.css';
+import Active from '../routes/routes';
 
 function App() {
   const [ setPage] = useState('/')
   return (
     <div className="App">
-      <NavBar onChange={setPage}/>
-      <br/>
-      <Routes>
-        <Route path="/About Me" element={<About heading='About Me' text='What I do and I like'  />} />
-        <Route path="/MyStacks" element={<TechStack heading='Technologies I use'/>} />
-        <Route exact path="/Projects" element={<Projects heading='PROJECTS' text='Some of my most recent works' />} />
-        <Route path="/Contact Me" element={<Contact heading='Get in Touch' text="Let's Connect and work together"/>} />
-        <Route exact path="/" element={<Home/>} />
-      </Routes>
+      <Routes />
     </div>
   );
 }
