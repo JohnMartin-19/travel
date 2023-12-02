@@ -1,7 +1,7 @@
 import React from "react";
-import 
-
-function Routes(){
+import {Routes, Route} from 'react-router-dom'
+import Home from '../components'
+function Active(){
     return(
         <div className="App">
       <NavBar onChange={setPage}/>
@@ -16,3 +16,4 @@ function Routes(){
     </div>
     )
 }
+export default Active
