@@ -1,10 +1,9 @@
+import React from "react";
+import 
 
-import './App.css';
-
-function App() {
-  const [ setPage] = useState('/')
-  return (
-    <div className="App">
+function Routes(){
+    return(
+        <div className="App">
       <NavBar onChange={setPage}/>
       <br/>
       <Routes>
@@ -15,7 +14,5 @@ function App() {
         <Route exact path="/" element={<Home/>} />
       </Routes>
     </div>
-  );
+    )
 }
-
-export default App;
