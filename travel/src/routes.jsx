@@ -1,8 +1,8 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom';
-import Home from '../components';
+import Home from './Home';
 import { useState } from "react";
-import NavBar from "../components/NavBav";
+import NavBar from "./NavBav";
 
 function Routess(){
     const [ setPage] = useState('/')
