@@ -1,38 +1,43 @@
-:root{
-    --primary-color:hsl(199,100%,33%);
-    --secondary-color:hsl(187,85%,43%);
-    --gradientColor: linear-gradient(to right, hsl(187,85%,43%), hsl(199,100%,33%));
-    --whiteColor: hsl(0,0%,100%);
-    --blackColor:hsl(201,33%,16%);
-    --textColor:hsl(240,4%,36%);
-    --whiteColorDeam:hsl(0,0%,93%);
-    --greyText:rgb(190,190,190);
-    --inputColor:rgb(239,239,239);
-    --bodyColor:rgb(240,240,240);
-    --cardBG:rgb(225,225,235);
-  
-  }
-  .header{
+
+.header{
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--whiteColorDeam);
     width: 100%;
     padding: 1rem;
     z-index: 1000;
     
   }
-  .logo{
+.logo{
     color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+  font-size: 25px;
+  color: var(--primary-color);
+  transform: translateY(5px);
+}
 
-  }
-
-  @media screen and (max-width:768px){
+@media screen and (max-width:640px){
+    .toggleNavbar{
+      .icon{
+        font-size: 25px;
+        color: var(--primary-color);
+      }
+      &:hover{
+        color: var(--secondary-color);
+      }
+    }
     .navBar{
       position: absolute;
       background-color: var(--whiteColorDeam);
       height: max-content;
+      padding: 1rem;
       width: 80%;
       border-radius: 1rem;
       top: 6rem;
@@ -67,4 +72,28 @@
         color: var(--whiteColor);
       }
     }
-  }
+}
+.closeNavbar{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primary-color);
+    &:hover{
+      color:var(--secondary-color);
+    }
+}
+
+:root{
+    --primary-color:hsl(199,100%,33%);
+    --secondary-color:hsl(187,85%,43%);
+    --gradientColor: linear-gradient(to right, hsl(187,85%,43%), hsl(199,100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,240);
+    --cardBG:rgb(225,225,235);
+  
+}
