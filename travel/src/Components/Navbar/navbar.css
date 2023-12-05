@@ -62,12 +62,15 @@ transform: translateY(5px);
     padding: 1rem;
     width: 80%;
     border-radius: 1rem;
-    top: 6rem;
+    top: -500rem;
     left: 50%;
     transform: translate(-50%);
     z-index:2000 ;
     box-shadow: 0 2px 4px rgba(2,15,29,0.904);
     transition: .3s ease-in-out;
+  }
+  .activeNavbar{
+    top: 7rem;
   }
   .navLists{
     flex-direction: column;

@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import  './navbar.css';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FaDev } from "react-icons/fa";
 import{TbGridDots} from 'react-icons/tb';
 function NavBar(){
+    const [active,setActive] = useState('navBar')
+
+    //handling navbar toggle function
+    const showNav = ()=>{
+        setActive('navBar activeNavbar');
+    }
+    const removeNav = () =>{
+        setActive('navBar')
+    }
+
     return(
         <section className="navBarSection">
             <header className="header flex">
@@ -13,7 +23,7 @@ function NavBar(){
                         <h1>The <IoMdArrowRoundBack className="icon" />End <FaDev className="icon" /></h1>
                     </a> 
                 </div>
-                <div className="navBar">
+                <div className={active}>
                     <ul className="navLists flex">
                         <li className="navItem">
                             <a href="/Home" className="navLink">Home</a>
@@ -38,11 +48,11 @@ function NavBar(){
                             <a href="#">BOOK NOW</a>
                         </button>
                     </ul>
-                    <div className="closeNavbar">
+                    <div onClick={removeNav} className="closeNavbar">
                     <AiFillCloseCircle className="icon"/>
                     </div>
                 </div>
-            <div className="toggleNavbar">
+            <div onClick={showNav} className="toggleNavbar">
                 <TbGridDots className='icon'/>
             </div>
 
