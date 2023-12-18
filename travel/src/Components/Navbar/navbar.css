@@ -12,14 +12,6 @@
   --cardBG:rgb(225,225,235);
 }
 
-.header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--whiteColorDeam);
-  width: 100%;
-}/*# sourceMappingURL=navbar.css.map */
 
 .header{
   position: fixed;
@@ -31,6 +23,22 @@
   padding: 1rem;
   z-index: 1000;
   
+}
+.navLists{
+  justify-content: space-between;
+  width: 100%;
+ 
+}
+.navItem{
+  padding:5px;
+  .navLink{
+    color: var(--textColor);
+    font-size: .9rem;
+    font-weight: 600;
+    &:hover{
+      color: var(--primary-color);
+    }
+  }
 }
 .logo{
   color: var(--blackColor);
