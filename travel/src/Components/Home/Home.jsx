@@ -4,7 +4,13 @@ import  './home.css';
 
 function Home(){
     return(
-        <div>Home Component</div>
+        <div>
+            <br /><br /><br /><br />
+            <h1>Home Comp</h1>
+            <p>welcome home</p>
+
+        </div>
+        
     )
 }
 

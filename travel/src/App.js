@@ -11,9 +11,8 @@ function App() {
      
       
       <NavBar/>
-      
-      <Main/>
       <Home/>
+      <Main />
       <Footer/>
       
       

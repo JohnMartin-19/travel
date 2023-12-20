@@ -4,7 +4,11 @@ import  './main.css';
 
 function Main(){
     return(
-        <div>Main Component</div>
+        
+        <div>
+            <br /><br /><br />
+            <h1>Wanitwa Mos</h1>
+        </div>
     )
 }
 
