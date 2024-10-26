@@ -1,0 +1,88 @@
+/* SignUp.css */
+
+
+  
+  .signup-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../imgs/StockCake-Wind\ Energy\ Field_1728580225.jpg') no-repeat center center;
+    background-size: 75%;
+    color: black;
+  }
+  
+  .form-container {
+    background: rgba(0, 0, 0, 0.0);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  /* h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffdd57;
+    text-align: center;
+  } */
+  
+  .subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color:black
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #bbb;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color:#0056b3;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,122 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333; /* Main text color */
+  }
+  
+/* IntroSection.css */
+
+.intro-card {
+    height: 75vh; /* Set the height to 75% of the viewport height */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #b4a7a7; /* Light background for the card */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    text-align: center; /* Center text inside the card */
+    background: linear-gradient(75deg, #50C878, #a7c2e1);
+  }
+  
+  .intro-content {
+    width: 60%; /* Set the width of the card */
+    background-color: rgb(83, 74, 74); /* Card background color */
+    padding: 40px; /* Padding inside the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    text-align: center; /* Center text inside the card */
+    color: black;
+  }
+  
+  .intro-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .intro-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  } */
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .mission, .vision {
+    width: 45%;
+    animation: slideIn 1s ease;
+  }
+  
+  .mission h2, .vision h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333; /* Ensure h2 headers are dark */
+  }
+  
+  .mission p, .vision p {
+    color: #333; /* Ensure paragraph text in mission and vision sections is dark */
+  }
+  
+  .trips {
+    text-align: center;
+  }
+  
+  .trip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .trip-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .trip-card h3 {
+    margin: 10px 0;
+    color: #333; /* Ensure card headers are dark */
+  }
+  
+  .trip-card p {
+    padding: 0 10px 10px;
+    color: #333; /* Ensure card paragraphs are dark */
+  }
+  
+  .trip-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
